@@ -20,7 +20,8 @@
     "storybook": "start-storybook -p 9001",
     "lint": "standard",
     "lint-fix": "standard --fix",
-    "test": "jest"
+    "test": "jest",
+    "prepare": "npm run build-cjs && npm run build-es6 && rimraf umd && npm run build-umd && npm run build-min"
   },
   "repository": {
     "type": "git",
